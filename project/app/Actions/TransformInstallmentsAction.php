@@ -11,9 +11,9 @@ class TransformInstallmentsAction
 		$transformed = [];
 
 		for ($i = 1; $i <= $installments; $i++) {
-			$date = Carbon::createFromFormat('Y-m-d', $date);
-			if ($i > 1) $date->addMonths();
-			$date = $date->format('Y-m-d');
+			$date = Carbon::createFromFormat('Y-m-d', $date)
+				->addMonths()
+				->format('Y-m-d');
 
 			$transformed[] = [
 				'installment' => $i,
