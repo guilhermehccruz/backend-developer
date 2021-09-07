@@ -6,7 +6,6 @@ use App\Actions\ExtractFileDataAction;
 use App\Actions\SplitSalesAction;
 use App\Actions\TransformDataAction;
 use App\Exceptions\InvalidSaleException;
-use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

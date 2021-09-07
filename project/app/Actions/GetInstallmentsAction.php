@@ -2,8 +2,6 @@
 
 namespace App\Actions;
 
-use Illuminate\Support\Carbon;
-
 class GetInstallmentsAction
 {
 	public static function handle($installments, $amount, $date)
