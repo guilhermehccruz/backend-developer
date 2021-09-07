@@ -1,5 +1,7 @@
 # How to install the project
 
+Recommended PHP version: `8.0`
+
 1. Enter the project folder
 ```
 cd project
@@ -10,12 +12,7 @@ cd project
 composer install
 ```
 
-3. Generate app key
-```
-php artisan key:generate
-```
-
-4. Run the project
+3. Run the project
 ```
 php artisan serve
 ```
