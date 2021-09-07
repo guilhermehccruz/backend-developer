@@ -37,7 +37,7 @@ class SalesTest extends TestCase
 			'file' => new UploadedFile(base_path('../invalidFile2.png'), 'image/x-png', 'image/x-png', null, true)
 		]);
 
-		$this->assertEquals(500, $response->status());
+		$this->assertEquals(422, $response->status());
 	}
 
 	/**
@@ -49,6 +49,6 @@ class SalesTest extends TestCase
 	{
 		$response = $this->call('post', '/sales', []);
 
-		$this->assertEquals(500, $response->status());
+		$this->assertEquals(422, $response->status());
 	}
 }

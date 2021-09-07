@@ -35,11 +35,6 @@ class SaleController extends Controller
 				'message' => 'A validation error has occurred',
 				'error' => $ex->getMessage(),
 			], 422);
-		} catch (Exception $ex) {
-			return response()->json([
-				'message' => 'An internal error has occurred',
-				'error' => $ex->getMessage(),
-			], 500);
 		}
 	}
 }
